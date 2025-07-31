@@ -20,6 +20,7 @@ df_barrio = df_raw.groupby("BARRIO").size().reset_index(name="cantidad")
 
 # Crea app
 app = dash.Dash(__name__)
+server = app.server
 
 # Layout
 app.layout = html.Div([
